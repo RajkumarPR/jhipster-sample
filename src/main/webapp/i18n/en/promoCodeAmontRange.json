@@ -1,0 +1,20 @@
+{
+    "ubwebApp": {
+        "promoCodeAmontRange" : {
+            "home": {
+                "title": "PromoCodeAmontRanges",
+                "createLabel": "Create a new PromoCodeAmontRange",
+                "createOrEditLabel": "Create or edit a PromoCodeAmontRange"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete PromoCodeAmontRange {{ id }}?"
+            },
+            "detail": {
+                "title": "PromoCodeAmontRange"
+            },
+            "lower": "Lower",
+            "higher": "Higher",
+            "threshold": "Threshold"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "cityName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CityName",
+            "fieldNameUnderscored": "city_name",
+            "fieldInJavaBeanMethod": "CityName",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "cityCode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CityCode",
+            "fieldNameUnderscored": "city_code",
+            "fieldInJavaBeanMethod": "CityCode",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "state",
+            "fieldType": "String",
+            "fieldNameCapitalized": "State",
+            "fieldNameUnderscored": "state",
+            "fieldInJavaBeanMethod": "State",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "country",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Country",
+            "fieldNameUnderscored": "country",
+            "fieldInJavaBeanMethod": "Country",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416063418",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

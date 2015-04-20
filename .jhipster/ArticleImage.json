@@ -1,0 +1,36 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "articleId",
+            "relationshipNameCapitalized": "ArticleId",
+            "relationshipFieldName": "articleId",
+            "otherEntityName": "expertsArticle",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "ExpertsArticle",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "imageUrl",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ImageUrl",
+            "fieldNameUnderscored": "image_url",
+            "fieldInJavaBeanMethod": "ImageUrl",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150419044330",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

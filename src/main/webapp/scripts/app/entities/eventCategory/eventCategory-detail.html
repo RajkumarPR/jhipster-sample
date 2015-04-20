@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="ubwebApp.eventCategory.detail.title">EventCategory</span> {{eventCategory.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventCategory.categoryname">Categoryname</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventCategory.categoryname}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventCategory.categorydescription">Categorydescription</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventCategory.categorydescription}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventCategory.lastModifiedDate">LastModifiedDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventCategory.lastModifiedDate}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="eventCategory"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

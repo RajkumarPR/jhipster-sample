@@ -1,0 +1,73 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldInJavaBeanMethod": "Title",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "content",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Content",
+            "fieldNameUnderscored": "content",
+            "fieldInJavaBeanMethod": "Content",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "isApproved",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsApproved",
+            "fieldNameUnderscored": "is_approved",
+            "fieldInJavaBeanMethod": "IsApproved",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsDeleted",
+            "fieldNameUnderscored": "is_deleted",
+            "fieldInJavaBeanMethod": "IsDeleted",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "uId",
+            "fieldType": "Long",
+            "fieldNameCapitalized": "UId",
+            "fieldNameUnderscored": "u_id",
+            "fieldInJavaBeanMethod": "uId",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "CreatedDate",
+            "fieldNameUnderscored": "created_date",
+            "fieldInJavaBeanMethod": "CreatedDate",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150418185014",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

@@ -1,0 +1,262 @@
+<div>
+
+    <h2 translate="ubwebApp.event.home.title">Event</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveEventModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.event.home.createLabel">Create a new Event</span>
+    </button>
+    <div class="modal fade" id="saveEventModal" tabindex="-1" role="dialog" aria-labelledby="myEventLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEventLabel" translate="ubwebApp.event.home.createOrEditLabel">Create or edit a Event</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="event.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.title">Title</label>
+                            <input type="text" class="form-control" name="title"
+                                   ng-model="event.title">
+
+                            <div ng-show="editForm.title.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.description">Description</label>
+                            <input type="text" class="form-control" name="description"
+                                   ng-model="event.description">
+
+                            <div ng-show="editForm.description.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.eventVenue">EventVenue</label>
+                            <input type="text" class="form-control" name="eventVenue"
+                                   ng-model="event.eventVenue">
+
+                            <div ng-show="editForm.eventVenue.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.costIncludes">CostIncludes</label>
+                            <input type="text" class="form-control" name="costIncludes"
+                                   ng-model="event.costIncludes">
+
+                            <div ng-show="editForm.costIncludes.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.specialInstructions">SpecialInstructions</label>
+                            <input type="text" class="form-control" name="specialInstructions"
+                                   ng-model="event.specialInstructions">
+
+                            <div ng-show="editForm.specialInstructions.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.isActive">IsActive</label>
+                            <input type="checkbox" class="form-control" name="isActive"
+                                   ng-model="event.isActive">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.isApproved">IsApproved</label>
+                            <input type="checkbox" class="form-control" name="isApproved"
+                                   ng-model="event.isApproved">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.isBookable">IsBookable</label>
+                            <input type="checkbox" class="form-control" name="isBookable"
+                                   ng-model="event.isBookable">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.isClosed">IsClosed</label>
+                            <input type="checkbox" class="form-control" name="isClosed"
+                                   ng-model="event.isClosed">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.isOnlyEnquiry">IsOnlyEnquiry</label>
+                            <input type="checkbox" class="form-control" name="isOnlyEnquiry"
+                                   ng-model="event.isOnlyEnquiry">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.startDate">StartDate</label>
+                            <input type="datetime-local" class="form-control" name="startDate"
+                                   ng-model="event.startDate" ng-model-options="{timezone: 'UTC'}">
+
+                            <div ng-show="editForm.startDate.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.startDate.$error.datetimelocal" translate="entity.validation.datetimelocal">
+                                    This field should be a date and time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.endDate">EndDate</label>
+                            <input type="datetime-local" class="form-control" name="endDate"
+                                   ng-model="event.endDate" ng-model-options="{timezone: 'UTC'}">
+
+                            <div ng-show="editForm.endDate.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.endDate.$error.datetimelocal" translate="entity.validation.datetimelocal">
+                                    This field should be a date and time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.eventContact">EventContact</label>
+                            <input type="text" class="form-control" name="eventContact"
+                                   ng-model="event.eventContact">
+
+                            <div ng-show="editForm.eventContact.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.eventType">EventType</label>
+                            <input type="number" class="form-control" name="eventType"
+                                   ng-model="event.eventType">
+
+                            <div ng-show="editForm.eventType.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.eventType.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.videoLink">VideoLink</label>
+                            <input type="text" class="form-control" name="videoLink"
+                                   ng-model="event.videoLink">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.cityId">cityId</label>
+                            <select class="form-control" name="cityId" ng-model="event.cityId.id" ng-options="cities.id as cities.id for cities in citiess">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.event.uId">uId</label>
+                            <select class="form-control" name="uId" ng-model="event.uId.id" ng-options="user.id as user.id for user in users">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteEventConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(event.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.event.delete.question" translate-values="{id: '{{event.id}}'}">Are you sure you want to delete this Event?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.event.title">Title</th>
+                    <th translate="ubwebApp.event.description">Description</th>
+                    <th translate="ubwebApp.event.eventVenue">EventVenue</th>
+                    <th translate="ubwebApp.event.costIncludes">CostIncludes</th>
+                    <th translate="ubwebApp.event.specialInstructions">SpecialInstructions</th>
+                    <th translate="ubwebApp.event.isActive">IsActive</th>
+                    <th translate="ubwebApp.event.isApproved">IsApproved</th>
+                    <th translate="ubwebApp.event.isBookable">IsBookable</th>
+                    <th translate="ubwebApp.event.isClosed">IsClosed</th>
+                    <th translate="ubwebApp.event.isOnlyEnquiry">IsOnlyEnquiry</th>
+                    <th translate="ubwebApp.event.startDate">StartDate</th>
+                    <th translate="ubwebApp.event.endDate">EndDate</th>
+                    <th translate="ubwebApp.event.eventContact">EventContact</th>
+                    <th translate="ubwebApp.event.eventType">EventType</th>
+                    <th translate="ubwebApp.event.videoLink">VideoLink</th>
+                    <th translate="ubwebApp.event.cityId">cityId</th>
+                    <th translate="ubwebApp.event.uId">uId</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="event in events">
+                    <td><a ui-sref="eventDetail({id:event.id})">{{event.id}}</a></td>
+                    <td>{{event.title}}</td>
+                    <td>{{event.description}}</td>
+                    <td>{{event.eventVenue}}</td>
+                    <td>{{event.costIncludes}}</td>
+                    <td>{{event.specialInstructions}}</td>
+                    <td>{{event.isActive}}</td>
+                    <td>{{event.isApproved}}</td>
+                    <td>{{event.isBookable}}</td>
+                    <td>{{event.isClosed}}</td>
+                    <td>{{event.isOnlyEnquiry}}</td>
+                    <td>{{event.startDate}}</td>
+                    <td>{{event.endDate}}</td>
+                    <td>{{event.eventContact}}</td>
+                    <td>{{event.eventType}}</td>
+                    <td>{{event.videoLink}}</td>
+                    <td>{{event.cityId.id}}</td>
+                    <td>{{event.uId.id}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="eventDetail({id:event.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(event.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(event.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

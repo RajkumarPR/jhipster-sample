@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="ubwebApp.rssfeeds.detail.title">Rssfeeds</span> {{rssfeeds.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.rssfeeds.title">Title</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{rssfeeds.title}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.rssfeeds.eventUrl">EventUrl</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{rssfeeds.eventUrl}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.rssfeeds.description">Description</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{rssfeeds.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.rssfeeds.pubDate">PubDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{rssfeeds.pubDate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.rssfeeds.guid">Guid</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{rssfeeds.guid}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="rssfeeds"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

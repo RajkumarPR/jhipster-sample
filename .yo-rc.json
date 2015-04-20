@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "ubweb",
+    "packageName": "com.urbanbinge",
+    "packageFolder": "com/urbanbinge",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "7",
+    "rememberMeKey": "74bb502ec2755240cc81be3748b0eeacc6d08c97"
+  }
+}

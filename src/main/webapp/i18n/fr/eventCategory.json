@@ -1,0 +1,21 @@
+{
+    "ubwebApp": {
+        "eventCategory" : {
+            "home": {
+                "title": "EventCategorys",
+                "createLabel": "Créer un nouveau EventCategory",
+                "createOrEditLabel": "Créer ou éditer un EventCategory"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le EventCategory {{ id }} ?"
+            },
+            "detail": {
+                "title": "EventCategory"
+            },
+            "categoryname": "Categoryname",
+            "categorydescription": "Categorydescription",
+            "lastModifiedDate": "LastModifiedDate"
+        }
+    }
+}
+

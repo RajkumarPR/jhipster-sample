@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150408183039_added_entity_Enquiry.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150416062643_added_entity_EventCategory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150416063418_added_entity_Cities.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150416064829_added_entity_Rssfeeds.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150416185424_added_entity_Event.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150417113727_added_entity_PromoCode.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150417114140_added_entity_PromoCodeUser.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150417114529_added_entity_PromoCodeAmontRange.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150417120017_added_entity_GiftAnExperience.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150418185014_added_entity_ExpertsArticle.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150419044330_added_entity_ArticleImage.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150419045031_added_entity_ArticleComment.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150419053140_added_entity_EventLocation.xml" relativeToChangelogFile="false"/>
+    <!-- JHipster will add liquibase changelogs here -->
+</databaseChangeLog>

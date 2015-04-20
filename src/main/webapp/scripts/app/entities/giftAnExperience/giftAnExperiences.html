@@ -1,0 +1,228 @@
+<div>
+
+    <h2 translate="ubwebApp.giftAnExperience.home.title">GiftAnExperience</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveGiftAnExperienceModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.giftAnExperience.home.createLabel">Create a new GiftAnExperience</span>
+    </button>
+    <div class="modal fade" id="saveGiftAnExperienceModal" tabindex="-1" role="dialog" aria-labelledby="myGiftAnExperienceLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myGiftAnExperienceLabel" translate="ubwebApp.giftAnExperience.home.createOrEditLabel">Create or edit a GiftAnExperience</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="giftAnExperience.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.receiverName">ReceiverName</label>
+                            <input type="text" class="form-control" name="receiverName"
+                                   ng-model="giftAnExperience.receiverName">
+
+                            <div ng-show="editForm.receiverName.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.receiverMail">ReceiverMail</label>
+                            <input type="text" class="form-control" name="receiverMail"
+                                   ng-model="giftAnExperience.receiverMail">
+
+                            <div ng-show="editForm.receiverMail.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.senderName">SenderName</label>
+                            <input type="text" class="form-control" name="senderName"
+                                   ng-model="giftAnExperience.senderName">
+
+                            <div ng-show="editForm.senderName.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.senderMail">SenderMail</label>
+                            <input type="text" class="form-control" name="senderMail"
+                                   ng-model="giftAnExperience.senderMail">
+
+                            <div ng-show="editForm.senderMail.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.senderPhone">SenderPhone</label>
+                            <input type="text" class="form-control" name="senderPhone"
+                                   ng-model="giftAnExperience.senderPhone">
+
+                            <div ng-show="editForm.senderPhone.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.giftMessage">GiftMessage</label>
+                            <input type="text" class="form-control" name="giftMessage"
+                                   ng-model="giftAnExperience.giftMessage">
+
+                            <div ng-show="editForm.giftMessage.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.voucherCode">VoucherCode</label>
+                            <input type="text" class="form-control" name="voucherCode"
+                                   ng-model="giftAnExperience.voucherCode">
+
+                            <div ng-show="editForm.voucherCode.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.voucherAmount">VoucherAmount</label>
+                            <input type="number" class="form-control" name="voucherAmount"
+                                   ng-model="giftAnExperience.voucherAmount">
+
+                            <div ng-show="editForm.voucherAmount.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.voucherAmount.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.transactionId">TransactionId</label>
+                            <input type="text" class="form-control" name="transactionId"
+                                   ng-model="giftAnExperience.transactionId">
+
+                            <div ng-show="editForm.transactionId.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.dateOfTransaction">DateOfTransaction</label>
+                            <input type="datetime-local" class="form-control" name="dateOfTransaction"
+                                   ng-model="giftAnExperience.dateOfTransaction" ng-model-options="{timezone: 'UTC'}">
+
+                            <div ng-show="editForm.dateOfTransaction.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.dateOfTransaction.$error.datetimelocal" translate="entity.validation.datetimelocal">
+                                    This field should be a date and time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.isVoucherValid">IsVoucherValid</label>
+                            <input type="checkbox" class="form-control" name="isVoucherValid"
+                                   ng-model="giftAnExperience.isVoucherValid">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.giftAnExperience.voucherValidity">VoucherValidity</label>
+                            <input type="datetime-local" class="form-control" name="voucherValidity"
+                                   ng-model="giftAnExperience.voucherValidity" ng-model-options="{timezone: 'UTC'}">
+
+                            <div ng-show="editForm.voucherValidity.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.voucherValidity.$error.datetimelocal" translate="entity.validation.datetimelocal">
+                                    This field should be a date and time.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteGiftAnExperienceConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(giftAnExperience.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.giftAnExperience.delete.question" translate-values="{id: '{{giftAnExperience.id}}'}">Are you sure you want to delete this GiftAnExperience?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.giftAnExperience.receiverName">ReceiverName</th>
+                    <th translate="ubwebApp.giftAnExperience.receiverMail">ReceiverMail</th>
+                    <th translate="ubwebApp.giftAnExperience.senderName">SenderName</th>
+                    <th translate="ubwebApp.giftAnExperience.senderMail">SenderMail</th>
+                    <th translate="ubwebApp.giftAnExperience.senderPhone">SenderPhone</th>
+                    <th translate="ubwebApp.giftAnExperience.giftMessage">GiftMessage</th>
+                    <th translate="ubwebApp.giftAnExperience.voucherCode">VoucherCode</th>
+                    <th translate="ubwebApp.giftAnExperience.voucherAmount">VoucherAmount</th>
+                    <th translate="ubwebApp.giftAnExperience.transactionId">TransactionId</th>
+                    <th translate="ubwebApp.giftAnExperience.dateOfTransaction">DateOfTransaction</th>
+                    <th translate="ubwebApp.giftAnExperience.isVoucherValid">IsVoucherValid</th>
+                    <th translate="ubwebApp.giftAnExperience.voucherValidity">VoucherValidity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="giftAnExperience in giftAnExperiences">
+                    <td><a ui-sref="giftAnExperienceDetail({id:giftAnExperience.id})">{{giftAnExperience.id}}</a></td>
+                    <td>{{giftAnExperience.receiverName}}</td>
+                    <td>{{giftAnExperience.receiverMail}}</td>
+                    <td>{{giftAnExperience.senderName}}</td>
+                    <td>{{giftAnExperience.senderMail}}</td>
+                    <td>{{giftAnExperience.senderPhone}}</td>
+                    <td>{{giftAnExperience.giftMessage}}</td>
+                    <td>{{giftAnExperience.voucherCode}}</td>
+                    <td>{{giftAnExperience.voucherAmount}}</td>
+                    <td>{{giftAnExperience.transactionId}}</td>
+                    <td>{{giftAnExperience.dateOfTransaction}}</td>
+                    <td>{{giftAnExperience.isVoucherValid}}</td>
+                    <td>{{giftAnExperience.voucherValidity}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="giftAnExperienceDetail({id:giftAnExperience.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(giftAnExperience.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(giftAnExperience.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+    "login": {
+        "title": "प्रमाणीकरण",
+        "form": {
+            "password": "पासवर्ड",
+            "password.placeholder": "आपका पासवर्ड",
+            "rememberme": "स्वचालित लॉगिन",
+            "button": "लॉगिन"
+        },
+        "messages": {
+            "error": {
+                "authentication": "<strong>Authentication failed!</strong> Please check your credentials and try again."
+            }
+        }
+    }
+}

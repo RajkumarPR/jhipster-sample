@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="ubwebApp.promoCodeAmontRange.detail.title">PromoCodeAmontRange</span> {{promoCodeAmontRange.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCodeAmontRange.lower">Lower</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCodeAmontRange.lower}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCodeAmontRange.higher">Higher</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCodeAmontRange.higher}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCodeAmontRange.threshold">Threshold</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCodeAmontRange.threshold}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="promoCodeAmontRange"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

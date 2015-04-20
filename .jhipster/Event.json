@@ -1,0 +1,180 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "cityId",
+            "relationshipNameCapitalized": "CityId",
+            "relationshipFieldName": "cityId",
+            "otherEntityName": "cities",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Cities",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "uId",
+            "relationshipNameCapitalized": "UId",
+            "relationshipFieldName": "uId",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "User",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldInJavaBeanMethod": "Title",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "eventVenue",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EventVenue",
+            "fieldNameUnderscored": "event_venue",
+            "fieldInJavaBeanMethod": "EventVenue",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "costIncludes",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CostIncludes",
+            "fieldNameUnderscored": "cost_includes",
+            "fieldInJavaBeanMethod": "CostIncludes",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "specialInstructions",
+            "fieldType": "String",
+            "fieldNameCapitalized": "SpecialInstructions",
+            "fieldNameUnderscored": "special_instructions",
+            "fieldInJavaBeanMethod": "SpecialInstructions",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "isActive",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsActive",
+            "fieldNameUnderscored": "is_active",
+            "fieldInJavaBeanMethod": "IsActive",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "isApproved",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsApproved",
+            "fieldNameUnderscored": "is_approved",
+            "fieldInJavaBeanMethod": "IsApproved",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "isBookable",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsBookable",
+            "fieldNameUnderscored": "is_bookable",
+            "fieldInJavaBeanMethod": "IsBookable",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "isClosed",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsClosed",
+            "fieldNameUnderscored": "is_closed",
+            "fieldInJavaBeanMethod": "IsClosed",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "isOnlyEnquiry",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsOnlyEnquiry",
+            "fieldNameUnderscored": "is_only_enquiry",
+            "fieldInJavaBeanMethod": "IsOnlyEnquiry",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "startDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "StartDate",
+            "fieldNameUnderscored": "start_date",
+            "fieldInJavaBeanMethod": "StartDate",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "endDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "EndDate",
+            "fieldNameUnderscored": "end_date",
+            "fieldInJavaBeanMethod": "EndDate",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "eventContact",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EventContact",
+            "fieldNameUnderscored": "event_contact",
+            "fieldInJavaBeanMethod": "EventContact",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "eventType",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "EventType",
+            "fieldNameUnderscored": "event_type",
+            "fieldInJavaBeanMethod": "EventType",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "videoLink",
+            "fieldType": "String",
+            "fieldNameCapitalized": "VideoLink",
+            "fieldNameUnderscored": "video_link",
+            "fieldInJavaBeanMethod": "VideoLink",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416185424",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

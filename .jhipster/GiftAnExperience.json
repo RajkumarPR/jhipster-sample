@@ -1,0 +1,134 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "receiverName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ReceiverName",
+            "fieldNameUnderscored": "receiver_name",
+            "fieldInJavaBeanMethod": "ReceiverName",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "receiverMail",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ReceiverMail",
+            "fieldNameUnderscored": "receiver_mail",
+            "fieldInJavaBeanMethod": "ReceiverMail",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "senderName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "SenderName",
+            "fieldNameUnderscored": "sender_name",
+            "fieldInJavaBeanMethod": "SenderName",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "senderMail",
+            "fieldType": "String",
+            "fieldNameCapitalized": "SenderMail",
+            "fieldNameUnderscored": "sender_mail",
+            "fieldInJavaBeanMethod": "SenderMail",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "senderPhone",
+            "fieldType": "String",
+            "fieldNameCapitalized": "SenderPhone",
+            "fieldNameUnderscored": "sender_phone",
+            "fieldInJavaBeanMethod": "SenderPhone",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "giftMessage",
+            "fieldType": "String",
+            "fieldNameCapitalized": "GiftMessage",
+            "fieldNameUnderscored": "gift_message",
+            "fieldInJavaBeanMethod": "GiftMessage",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "voucherCode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "VoucherCode",
+            "fieldNameUnderscored": "voucher_code",
+            "fieldInJavaBeanMethod": "VoucherCode",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "voucherAmount",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "VoucherAmount",
+            "fieldNameUnderscored": "voucher_amount",
+            "fieldInJavaBeanMethod": "VoucherAmount",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "transactionId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "TransactionId",
+            "fieldNameUnderscored": "transaction_id",
+            "fieldInJavaBeanMethod": "TransactionId",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "dateOfTransaction",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DateOfTransaction",
+            "fieldNameUnderscored": "date_of_transaction",
+            "fieldInJavaBeanMethod": "DateOfTransaction",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "isVoucherValid",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsVoucherValid",
+            "fieldNameUnderscored": "is_voucher_valid",
+            "fieldInJavaBeanMethod": "IsVoucherValid",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "voucherValidity",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "VoucherValidity",
+            "fieldNameUnderscored": "voucher_validity",
+            "fieldInJavaBeanMethod": "VoucherValidity",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150417120017",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

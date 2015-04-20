@@ -1,0 +1,20 @@
+{
+    "ubwebApp": {
+        "eventCategory" : {
+            "home": {
+                "title": "EventCategorys",
+                "createLabel": "Create a new EventCategory",
+                "createOrEditLabel": "Create or edit a EventCategory"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete EventCategory {{ id }}?"
+            },
+            "detail": {
+                "title": "EventCategory"
+            },
+            "categoryname": "Categoryname",
+            "categorydescription": "Categorydescription",
+            "lastModifiedDate": "LastModifiedDate"
+        }
+    }
+}

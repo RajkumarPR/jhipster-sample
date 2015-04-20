@@ -1,0 +1,19 @@
+{
+    "ubwebApp": {
+        "articleImage" : {
+            "home": {
+                "title": "ArticleImages",
+                "createLabel": "Create a new ArticleImage",
+                "createOrEditLabel": "Create or edit a ArticleImage"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete ArticleImage {{ id }}?"
+            },
+            "detail": {
+                "title": "ArticleImage"
+            },
+            "imageUrl": "ImageUrl",
+            "articleId": "articleId"
+        }
+    }
+}

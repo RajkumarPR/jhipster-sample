@@ -1,0 +1,65 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldInJavaBeanMethod": "Title",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "eventUrl",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EventUrl",
+            "fieldNameUnderscored": "event_url",
+            "fieldInJavaBeanMethod": "EventUrl",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "pubDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "PubDate",
+            "fieldNameUnderscored": "pub_date",
+            "fieldInJavaBeanMethod": "PubDate",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "guid",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Guid",
+            "fieldNameUnderscored": "guid",
+            "fieldInJavaBeanMethod": "Guid",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416064829",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

@@ -1,0 +1,66 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "eventId",
+            "relationshipNameCapitalized": "EventId",
+            "relationshipFieldName": "eventId",
+            "otherEntityName": "event",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Event",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "location",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Location",
+            "fieldNameUnderscored": "location",
+            "fieldInJavaBeanMethod": "Location",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "eventAddress",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EventAddress",
+            "fieldNameUnderscored": "event_address",
+            "fieldInJavaBeanMethod": "EventAddress",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "latitude",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Latitude",
+            "fieldNameUnderscored": "latitude",
+            "fieldInJavaBeanMethod": "Latitude",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "longitude",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Longitude",
+            "fieldNameUnderscored": "longitude",
+            "fieldInJavaBeanMethod": "Longitude",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150419053140",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

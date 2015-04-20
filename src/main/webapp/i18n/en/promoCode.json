@@ -1,0 +1,21 @@
+{
+    "ubwebApp": {
+        "promoCode" : {
+            "home": {
+                "title": "PromoCodes",
+                "createLabel": "Create a new PromoCode",
+                "createOrEditLabel": "Create or edit a PromoCode"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete PromoCode {{ id }}?"
+            },
+            "detail": {
+                "title": "PromoCode"
+            },
+            "promoCode": "PromoCode",
+            "promoAmount": "PromoAmount",
+            "isPromoValid": "IsPromoValid",
+            "promoValidity": "PromoValidity"
+        }
+    }
+}

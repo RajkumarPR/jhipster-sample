@@ -1,0 +1,20 @@
+{
+    "ubwebApp": {
+        "promoCodeUser" : {
+            "home": {
+                "title": "PromoCodeUsers",
+                "createLabel": "Créer un nouveau PromoCodeUser",
+                "createOrEditLabel": "Créer ou éditer un PromoCodeUser"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le PromoCodeUser {{ id }} ?"
+            },
+            "detail": {
+                "title": "PromoCodeUser"
+            },
+            "emailUsed": "EmailUsed",
+            "promoCodeUsed": "PromoCodeUsed"
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+{
+    "ubwebApp": {
+        "articleComment" : {
+            "home": {
+                "title": "ArticleComments",
+                "createLabel": "Créer un nouveau ArticleComment",
+                "createOrEditLabel": "Créer ou éditer un ArticleComment"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ArticleComment {{ id }} ?"
+            },
+            "detail": {
+                "title": "ArticleComment"
+            },
+            "comment": "Comment",
+            "commenter": "Commenter",
+            "isApproved": "IsApproved",
+            "commentedOn": "CommentedOn",
+            "articleId": "articleId"
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+{
+    "ubwebApp": {
+        "rssfeeds" : {
+            "home": {
+                "title": "Rssfeedss",
+                "createLabel": "Créer un nouveau Rssfeeds",
+                "createOrEditLabel": "Créer ou éditer un Rssfeeds"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Rssfeeds {{ id }} ?"
+            },
+            "detail": {
+                "title": "Rssfeeds"
+            },
+            "title": "Title",
+            "eventUrl": "EventUrl",
+            "description": "Description",
+            "pubDate": "PubDate",
+            "guid": "Guid"
+        }
+    }
+}
+

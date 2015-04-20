@@ -1,0 +1,30 @@
+{
+    "ubwebApp": {
+        "giftAnExperience" : {
+            "home": {
+                "title": "GiftAnExperiences",
+                "createLabel": "Créer un nouveau GiftAnExperience",
+                "createOrEditLabel": "Créer ou éditer un GiftAnExperience"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le GiftAnExperience {{ id }} ?"
+            },
+            "detail": {
+                "title": "GiftAnExperience"
+            },
+            "receiverName": "ReceiverName",
+            "receiverMail": "ReceiverMail",
+            "senderName": "SenderName",
+            "senderMail": "SenderMail",
+            "senderPhone": "SenderPhone",
+            "giftMessage": "GiftMessage",
+            "voucherCode": "VoucherCode",
+            "voucherAmount": "VoucherAmount",
+            "transactionId": "TransactionId",
+            "dateOfTransaction": "DateOfTransaction",
+            "isVoucherValid": "IsVoucherValid",
+            "voucherValidity": "VoucherValidity"
+        }
+    }
+}
+

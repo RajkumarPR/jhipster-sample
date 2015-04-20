@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity PromoCode.
+    -->
+    <changeSet id="20150417113727" author="jhipster">
+        <createTable tableName="T_PROMOCODE">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="promo_code" type="varchar(255)"/>
+            <column name="promo_amount" type="integer"/>
+            <column name="is_promo_valid" type="bit"/>
+            <column name="promo_validity" type="timestamp"/>
+        </createTable>
+        <dropDefaultValue tableName="T_PROMOCODE" columnName="promo_validity" columnDataType="datetime"/>
+
+        
+    </changeSet>
+</databaseChangeLog>

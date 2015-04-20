@@ -1,0 +1,34 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "emailUsed",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EmailUsed",
+            "fieldNameUnderscored": "email_used",
+            "fieldInJavaBeanMethod": "EmailUsed",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "promoCodeUsed",
+            "fieldType": "String",
+            "fieldNameCapitalized": "PromoCodeUsed",
+            "fieldNameUnderscored": "promo_code_used",
+            "fieldInJavaBeanMethod": "PromoCodeUsed",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150417114140",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

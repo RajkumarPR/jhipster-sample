@@ -1,0 +1,22 @@
+{
+    "ubwebApp": {
+        "cities" : {
+            "home": {
+                "title": "Citiess",
+                "createLabel": "Créer un nouveau Cities",
+                "createOrEditLabel": "Créer ou éditer un Cities"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Cities {{ id }} ?"
+            },
+            "detail": {
+                "title": "Cities"
+            },
+            "cityName": "CityName",
+            "cityCode": "CityCode",
+            "state": "State",
+            "country": "Country"
+        }
+    }
+}
+

@@ -1,0 +1,24 @@
+{
+    "ubwebApp": {
+        "expertsArticle" : {
+            "home": {
+                "title": "ExpertsArticles",
+                "createLabel": "Créer un nouveau ExpertsArticle",
+                "createOrEditLabel": "Créer ou éditer un ExpertsArticle"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ExpertsArticle {{ id }} ?"
+            },
+            "detail": {
+                "title": "ExpertsArticle"
+            },
+            "title": "Title",
+            "content": "Content",
+            "isApproved": "IsApproved",
+            "isDeleted": "IsDeleted",
+            "uId": "UId",
+            "createdDate": "CreatedDate"
+        }
+    }
+}
+

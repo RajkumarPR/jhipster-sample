@@ -1,0 +1,132 @@
+<div>
+
+    <h2 translate="ubwebApp.eventCategory.home.title">EventCategory</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveEventCategoryModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.eventCategory.home.createLabel">Create a new EventCategory</span>
+    </button>
+    <div class="modal fade" id="saveEventCategoryModal" tabindex="-1" role="dialog" aria-labelledby="myEventCategoryLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEventCategoryLabel" translate="ubwebApp.eventCategory.home.createOrEditLabel">Create or edit a EventCategory</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="eventCategory.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventCategory.categoryname">Categoryname</label>
+                            <input type="text" class="form-control" name="categoryname"
+                                   ng-model="eventCategory.categoryname">
+
+                            <div ng-show="editForm.categoryname.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventCategory.categorydescription">Categorydescription</label>
+                            <input type="text" class="form-control" name="categorydescription"
+                                   ng-model="eventCategory.categorydescription">
+
+                            <div ng-show="editForm.categorydescription.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventCategory.lastModifiedDate">LastModifiedDate</label>
+                            <input type="datetime-local" class="form-control" name="lastModifiedDate"
+                                   ng-model="eventCategory.lastModifiedDate" ng-model-options="{timezone: 'UTC'}">
+
+                            <div ng-show="editForm.lastModifiedDate.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.lastModifiedDate.$error.datetimelocal" translate="entity.validation.datetimelocal">
+                                    This field should be a date and time.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteEventCategoryConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(eventCategory.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.eventCategory.delete.question" translate-values="{id: '{{eventCategory.id}}'}">Are you sure you want to delete this EventCategory?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.eventCategory.categoryname">Categoryname</th>
+                    <th translate="ubwebApp.eventCategory.categorydescription">Categorydescription</th>
+                    <th translate="ubwebApp.eventCategory.lastModifiedDate">LastModifiedDate</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="eventCategory in eventCategorys">
+                    <td><a ui-sref="eventCategoryDetail({id:eventCategory.id})">{{eventCategory.id}}</a></td>
+                    <td>{{eventCategory.categoryname}}</td>
+                    <td>{{eventCategory.categorydescription}}</td>
+                    <td>{{eventCategory.lastModifiedDate}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="eventCategoryDetail({id:eventCategory.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(eventCategory.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(eventCategory.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

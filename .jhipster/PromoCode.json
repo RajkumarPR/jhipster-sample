@@ -1,0 +1,54 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "promoCode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "PromoCode",
+            "fieldNameUnderscored": "promo_code",
+            "fieldInJavaBeanMethod": "PromoCode",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "promoAmount",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "PromoAmount",
+            "fieldNameUnderscored": "promo_amount",
+            "fieldInJavaBeanMethod": "PromoAmount",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "isPromoValid",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsPromoValid",
+            "fieldNameUnderscored": "is_promo_valid",
+            "fieldInJavaBeanMethod": "IsPromoValid",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "promoValidity",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "PromoValidity",
+            "fieldNameUnderscored": "promo_validity",
+            "fieldInJavaBeanMethod": "PromoValidity",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150417113727",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

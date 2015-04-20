@@ -1,0 +1,158 @@
+
+<div>
+    <h2><span translate="ubwebApp.event.detail.title">Event</span> {{event.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.title">Title</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.title}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.description">Description</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.eventVenue">EventVenue</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.eventVenue}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.costIncludes">CostIncludes</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.costIncludes}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.specialInstructions">SpecialInstructions</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.specialInstructions}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.isActive">IsActive</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.isActive}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.isApproved">IsApproved</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.isApproved}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.isBookable">IsBookable</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.isBookable}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.isClosed">IsClosed</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.isClosed}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.isOnlyEnquiry">IsOnlyEnquiry</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.isOnlyEnquiry}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.startDate">StartDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.startDate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.endDate">EndDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.endDate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.eventContact">EventContact</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.eventContact}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.eventType">EventType</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.eventType}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.videoLink">VideoLink</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.videoLink}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.cityId">cityId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.cityId.id}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.event.uId">uId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{event.uId.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="event"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

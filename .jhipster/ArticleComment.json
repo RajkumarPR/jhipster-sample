@@ -1,0 +1,65 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "articleId",
+            "relationshipNameCapitalized": "ArticleId",
+            "relationshipFieldName": "articleId",
+            "otherEntityName": "expertsArticle",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "ExpertsArticle",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "comment",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Comment",
+            "fieldNameUnderscored": "comment",
+            "fieldInJavaBeanMethod": "Comment",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "commenter",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Commenter",
+            "fieldNameUnderscored": "commenter",
+            "fieldInJavaBeanMethod": "Commenter",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "isApproved",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "IsApproved",
+            "fieldNameUnderscored": "is_approved",
+            "fieldInJavaBeanMethod": "IsApproved",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "commentedOn",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "CommentedOn",
+            "fieldNameUnderscored": "commented_on",
+            "fieldInJavaBeanMethod": "CommentedOn",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150419045031",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

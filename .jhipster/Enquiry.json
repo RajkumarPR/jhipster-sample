@@ -1,0 +1,75 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "eventId",
+            "fieldType": "Long",
+            "fieldNameCapitalized": "EventId",
+            "fieldNameUnderscored": "event_id",
+            "fieldInJavaBeanMethod": "EventId",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "customerName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CustomerName",
+            "fieldNameUnderscored": "customer_name",
+            "fieldInJavaBeanMethod": "CustomerName",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldInJavaBeanMethod": "Email",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "enquiry_message",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Enquiry_message",
+            "fieldNameUnderscored": "enquiry_message",
+            "fieldInJavaBeanMethod": "Enquiry_message",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "mobileNo",
+            "fieldType": "String",
+            "fieldNameCapitalized": "MobileNo",
+            "fieldNameUnderscored": "mobile_no",
+            "fieldInJavaBeanMethod": "MobileNo",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "tickeNames",
+            "fieldType": "String",
+            "fieldNameCapitalized": "TickeNames",
+            "fieldNameUnderscored": "ticke_names",
+            "fieldInJavaBeanMethod": "TickeNames",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150408183039",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

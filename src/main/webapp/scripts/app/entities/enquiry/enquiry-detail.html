@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="ubwebApp.enquiry.detail.title">Enquiry</span> {{enquiry.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.eventId">EventId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.eventId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.customerName">CustomerName</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.customerName}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.email}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.enquiry_message">Enquiry_message</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.enquiry_message}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.mobileNo">MobileNo</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.mobileNo}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.enquiry.tickeNames">TickeNames</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{enquiry.tickeNames}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="enquiry"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

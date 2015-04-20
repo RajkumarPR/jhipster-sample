@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="ubwebApp.promoCode.detail.title">PromoCode</span> {{promoCode.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCode.promoCode">PromoCode</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCode.promoCode}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCode.promoAmount">PromoAmount</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCode.promoAmount}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCode.isPromoValid">IsPromoValid</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCode.isPromoValid}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.promoCode.promoValidity">PromoValidity</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{promoCode.promoValidity}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="promoCode"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

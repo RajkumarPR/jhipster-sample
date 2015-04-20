@@ -1,0 +1,34 @@
+{
+    "ubwebApp": {
+        "event" : {
+            "home": {
+                "title": "Events",
+                "createLabel": "Create a new Event",
+                "createOrEditLabel": "Create or edit a Event"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Event {{ id }}?"
+            },
+            "detail": {
+                "title": "Event"
+            },
+            "title": "Title",
+            "description": "Description",
+            "eventVenue": "EventVenue",
+            "costIncludes": "CostIncludes",
+            "specialInstructions": "SpecialInstructions",
+            "isActive": "IsActive",
+            "isApproved": "IsApproved",
+            "isBookable": "IsBookable",
+            "isClosed": "IsClosed",
+            "isOnlyEnquiry": "IsOnlyEnquiry",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "eventContact": "EventContact",
+            "eventType": "EventType",
+            "videoLink": "VideoLink",
+            "cityId": "cityId",
+            "uId": "uId"
+        }
+    }
+}

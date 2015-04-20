@@ -1,0 +1,45 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "categoryname",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Categoryname",
+            "fieldNameUnderscored": "categoryname",
+            "fieldInJavaBeanMethod": "Categoryname",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "categorydescription",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Categorydescription",
+            "fieldNameUnderscored": "categorydescription",
+            "fieldInJavaBeanMethod": "Categorydescription",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "lastModifiedDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "LastModifiedDate",
+            "fieldNameUnderscored": "last_modified_date",
+            "fieldInJavaBeanMethod": "LastModifiedDate",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416062643",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

@@ -1,0 +1,45 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "lower",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Lower",
+            "fieldNameUnderscored": "lower",
+            "fieldInJavaBeanMethod": "Lower",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "higher",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Higher",
+            "fieldNameUnderscored": "higher",
+            "fieldInJavaBeanMethod": "Higher",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "threshold",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Threshold",
+            "fieldNameUnderscored": "threshold",
+            "fieldInJavaBeanMethod": "Threshold",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150417114529",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

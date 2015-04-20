@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="ubwebApp.articleComment.detail.title">ArticleComment</span> {{articleComment.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.articleComment.comment">Comment</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{articleComment.comment}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.articleComment.commenter">Commenter</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{articleComment.commenter}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.articleComment.isApproved">IsApproved</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{articleComment.isApproved}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.articleComment.commentedOn">CommentedOn</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{articleComment.commentedOn}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.articleComment.articleId">articleId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{articleComment.articleId.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="articleComment"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

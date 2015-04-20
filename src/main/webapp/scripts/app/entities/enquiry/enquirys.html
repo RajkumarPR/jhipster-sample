@@ -1,0 +1,162 @@
+<div>
+
+    <h2 translate="ubwebApp.enquiry.home.title">Enquiry</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveEnquiryModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.enquiry.home.createLabel">Create a new Enquiry</span>
+    </button>
+    <div class="modal fade" id="saveEnquiryModal" tabindex="-1" role="dialog" aria-labelledby="myEnquiryLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEnquiryLabel" translate="ubwebApp.enquiry.home.createOrEditLabel">Create or edit a Enquiry</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="enquiry.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.eventId">EventId</label>
+                            <input type="number" class="form-control" name="eventId"
+                                   ng-model="enquiry.eventId">
+
+                            <div ng-show="editForm.eventId.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.eventId.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.customerName">CustomerName</label>
+                            <input type="text" class="form-control" name="customerName"
+                                   ng-model="enquiry.customerName">
+
+                            <div ng-show="editForm.customerName.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.email">Email</label>
+                            <input type="text" class="form-control" name="email"
+                                   ng-model="enquiry.email">
+
+                            <div ng-show="editForm.email.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.enquiry_message">Enquiry_message</label>
+                            <input type="text" class="form-control" name="enquiry_message"
+                                   ng-model="enquiry.enquiry_message">
+
+                            <div ng-show="editForm.enquiry_message.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.mobileNo">MobileNo</label>
+                            <input type="text" class="form-control" name="mobileNo"
+                                   ng-model="enquiry.mobileNo">
+
+                            <div ng-show="editForm.mobileNo.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.enquiry.tickeNames">TickeNames</label>
+                            <input type="text" class="form-control" name="tickeNames"
+                                   ng-model="enquiry.tickeNames">
+
+                            <div ng-show="editForm.tickeNames.$invalid">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteEnquiryConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(enquiry.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.enquiry.delete.question" translate-values="{id: '{{enquiry.id}}'}">Are you sure you want to delete this Enquiry?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.enquiry.eventId">EventId</th>
+                    <th translate="ubwebApp.enquiry.customerName">CustomerName</th>
+                    <th translate="ubwebApp.enquiry.email">Email</th>
+                    <th translate="ubwebApp.enquiry.enquiry_message">Enquiry_message</th>
+                    <th translate="ubwebApp.enquiry.mobileNo">MobileNo</th>
+                    <th translate="ubwebApp.enquiry.tickeNames">TickeNames</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="enquiry in enquirys">
+                    <td><a ui-sref="enquiryDetail({id:enquiry.id})">{{enquiry.id}}</a></td>
+                    <td>{{enquiry.eventId}}</td>
+                    <td>{{enquiry.customerName}}</td>
+                    <td>{{enquiry.email}}</td>
+                    <td>{{enquiry.enquiry_message}}</td>
+                    <td>{{enquiry.mobileNo}}</td>
+                    <td>{{enquiry.tickeNames}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="enquiryDetail({id:enquiry.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(enquiry.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(enquiry.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

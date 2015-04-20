@@ -1,0 +1,23 @@
+{
+    "ubwebApp": {
+        "enquiry" : {
+            "home": {
+                "title": "Enquirys",
+                "createLabel": "Create a new Enquiry",
+                "createOrEditLabel": "Create or edit a Enquiry"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Enquiry {{ id }}?"
+            },
+            "detail": {
+                "title": "Enquiry"
+            },
+            "eventId": "EventId",
+            "customerName": "CustomerName",
+            "email": "Email",
+            "enquiry_message": "Enquiry_message",
+            "mobileNo": "MobileNo",
+            "tickeNames": "TickeNames"
+        }
+    }
+}

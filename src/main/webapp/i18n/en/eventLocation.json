@@ -1,0 +1,22 @@
+{
+    "ubwebApp": {
+        "eventLocation" : {
+            "home": {
+                "title": "EventLocations",
+                "createLabel": "Create a new EventLocation",
+                "createOrEditLabel": "Create or edit a EventLocation"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete EventLocation {{ id }}?"
+            },
+            "detail": {
+                "title": "EventLocation"
+            },
+            "location": "Location",
+            "eventAddress": "EventAddress",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "eventId": "eventId"
+        }
+    }
+}

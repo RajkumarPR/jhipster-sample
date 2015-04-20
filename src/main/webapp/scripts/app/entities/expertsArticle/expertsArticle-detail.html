@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="ubwebApp.expertsArticle.detail.title">ExpertsArticle</span> {{expertsArticle.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.title">Title</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.title}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.content">Content</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.content}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.isApproved">IsApproved</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.isApproved}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.isDeleted">IsDeleted</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.isDeleted}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.uId">UId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.uId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.expertsArticle.createdDate">CreatedDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{expertsArticle.createdDate}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="expertsArticle"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
