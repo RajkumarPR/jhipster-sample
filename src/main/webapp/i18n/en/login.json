@@ -1,6 +1,6 @@
 {
     "login": {
-        "title": "Login with UB",
+        "title": "Login with UrbanBinge",
         "form": {
             "password": "Password",
             "password.placeholder": "Your password",

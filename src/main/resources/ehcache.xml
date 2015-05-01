@@ -71,6 +71,20 @@
     <cache name="com.urbanbinge.domain.GiftAnExperience"
            timeToLiveSeconds="3600">
     </cache>
+    <cache name="com.urbanbinge.domain.ExpertsArticle"
+           timeToLiveSeconds="3600">
+    </cache>
 
+    <cache name="com.urbanbinge.domain.ArticleComment"
+           timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.urbanbinge.domain.ArticleImage"
+           timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.urbanbinge.domain.EventLocation"
+           timeToLiveSeconds="3600">
+    </cache>
 
 </ehcache>

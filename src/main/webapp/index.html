@@ -18,19 +18,68 @@
         <!-- build:css assets/styles/main.css -->
         <link rel="stylesheet" href="assets/styles/main.css">
         <!-- endbuild -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
+
     <body ng-app="ubwebApp">
         <!--[if lt IE 10]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </p>
         <![endif]-->
         <!--<div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak=""></div>-->
+
         <div ui-view="navbar" ng-cloak=""></div>
+        <!--end nav bar-->
+        <!--begin bg-carousel-->
+        <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="slide1"></div>
+                </div>
+                <div class="item">
+                    <div class="slide2"></div>
+                </div>
+                <div class="item">
+                    <div class="slide3"></div>
+                </div>
+            </div><!-- .carousel-inner -->
+            <div class="carousel-overlay text-center">
+                <div class="search-form wow pulse" data-wow-delay="0.8s">
+                    <form action="" class=" form-inline">
+                        <div class="form-group">
+                            <select name="" id="cityId" class="form-control">
+                                <option>Select Your City</option>
+                                <option selected>Bangalore, BAN</option>
+                                <option>Cochin, COC</option>
+                                <option>Mysore, MAY</option>
+                                <option>Bidar, BDR</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="categoryId" class="form-control">
+                                <option>Select Your Category</option>
+                                <option selected>Adventure</option>
+                                <option>Resorts</option>
+                                <option>Team Outing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Looking for">
+                        </div>
+                        <input type="submit" class="btn" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div><!-- .carousel -->
+        <!--end bg-carousel-->
         <div class="container">
             <div class="well" ui-view="content"></div>
         </div>
-        <!--<div class="footer">
+       <div class="footer">
             <p translate="footer">This is your footer</p>
-        </div>-->
+        </div>
         <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -174,6 +223,14 @@
         <script src="scripts/app/entities/eventLocation/eventLocation.controller.js"></script>
         <script src="scripts/app/entities/eventLocation/eventLocation-detail.controller.js"></script>
         <script src="scripts/components/entities/eventLocation/eventLocation.service.js"></script>
+        <script src="scripts/app/entities/eventCategorMap/eventCategorMap.js"></script>
+        <script src="scripts/app/entities/eventCategorMap/eventCategorMap.controller.js"></script>
+        <script src="scripts/app/entities/eventCategorMap/eventCategorMap-detail.controller.js"></script>
+        <script src="scripts/components/entities/eventCategorMap/eventCategorMap.service.js"></script>
+        <script src="scripts/app/entities/eventTicket/eventTicket.js"></script>
+        <script src="scripts/app/entities/eventTicket/eventTicket.controller.js"></script>
+        <script src="scripts/app/entities/eventTicket/eventTicket-detail.controller.js"></script>
+        <script src="scripts/components/entities/eventTicket/eventTicket.service.js"></script>
         <!-- endbuild -->
 </body>
 </html>

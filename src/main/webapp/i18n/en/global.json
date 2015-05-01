@@ -19,6 +19,8 @@
                 "articleImage": "ArticleImage",
                 "articleComment": "ArticleComment",
                 "eventLocation": "EventLocation",
+                "eventCategorMap": "EventCategorMap",
+                "eventTicket": "EventTicket",
                 "additionalEntity": "JHipster will add addtional entities"
             },
             "account": {

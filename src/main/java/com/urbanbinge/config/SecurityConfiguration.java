@@ -88,6 +88,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .rememberMe()
             .rememberMeServices(rememberMeServices)
+			.rememberMeParameter("remember-me")
             .key(env.getProperty("jhipster.security.rememberme.key"))
         .and()
             .formLogin()
