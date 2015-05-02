@@ -1,0 +1,223 @@
+<div>
+
+    <h2 translate="ubwebApp.eventTicket.home.title">EventTicket</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveEventTicketModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.eventTicket.home.createLabel">Create a new EventTicket</span>
+    </button>
+    <div class="modal fade" id="saveEventTicketModal" tabindex="-1" role="dialog" aria-labelledby="myEventTicketLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEventTicketLabel" translate="ubwebApp.eventTicket.home.createOrEditLabel">Create or edit a EventTicket</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="eventTicket.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.ticketCost">TicketCost</label>
+                            <input type="number" class="form-control" name="ticketCost"
+                                   ng-model="eventTicket.ticketCost">
+
+                            <div ng-show="editForm.ticketCost.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.ticketCost.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.totalTickets">TotalTickets</label>
+                            <input type="number" class="form-control" name="totalTickets"
+                                   ng-model="eventTicket.totalTickets">
+
+                            <div ng-show="editForm.totalTickets.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.totalTickets.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.discount">Discount</label>
+                            <input type="number" class="form-control" name="discount"
+                                   ng-model="eventTicket.discount">
+
+                            <div ng-show="editForm.discount.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.discount.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.hasOffer">HasOffer</label>
+                            <input type="checkbox" class="form-control" name="hasOffer"
+                                   ng-model="eventTicket.hasOffer">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.minimunTicket">MinimunTicket</label>
+                            <input type="number" class="form-control" name="minimunTicket"
+                                   ng-model="eventTicket.minimunTicket">
+
+                            <div ng-show="editForm.minimunTicket.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.minimunTicket.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.ticketType">TicketType</label>
+                            <input type="number" class="form-control" name="ticketType"
+                                   ng-model="eventTicket.ticketType">
+
+                            <div ng-show="editForm.ticketType.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.ticketType.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.ticketName">TicketName</label>
+                            <input type="text" class="form-control" name="ticketName"
+                                   ng-model="eventTicket.ticketName">
+
+                            <div ng-show="editForm.ticketName.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.startTime">StartTime</label>
+                            <input type="text" class="form-control" name="startTime"
+                                   ng-model="eventTicket.startTime">
+
+                            <div ng-show="editForm.startTime.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.endTime">EndTime</label>
+                            <input type="text" class="form-control" name="endTime"
+                                   ng-model="eventTicket.endTime">
+
+                            <div ng-show="editForm.endTime.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.duration">Duration</label>
+                            <input type="text" class="form-control" name="duration"
+                                   ng-model="eventTicket.duration">
+
+                            <div ng-show="editForm.duration.$invalid">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventTicket.eventId">eventId</label>
+                            <select class="form-control" name="eventId" ng-model="eventTicket.eventId.id" ng-options="event.id as event.id for event in events">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteEventTicketConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(eventTicket.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.eventTicket.delete.question" translate-values="{id: '{{eventTicket.id}}'}">Are you sure you want to delete this EventTicket?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.eventTicket.ticketCost">TicketCost</th>
+                    <th translate="ubwebApp.eventTicket.totalTickets">TotalTickets</th>
+                    <th translate="ubwebApp.eventTicket.discount">Discount</th>
+                    <th translate="ubwebApp.eventTicket.hasOffer">HasOffer</th>
+                    <th translate="ubwebApp.eventTicket.minimunTicket">MinimunTicket</th>
+                    <th translate="ubwebApp.eventTicket.ticketType">TicketType</th>
+                    <th translate="ubwebApp.eventTicket.ticketName">TicketName</th>
+                    <th translate="ubwebApp.eventTicket.startTime">StartTime</th>
+                    <th translate="ubwebApp.eventTicket.endTime">EndTime</th>
+                    <th translate="ubwebApp.eventTicket.duration">Duration</th>
+                    <th translate="ubwebApp.eventTicket.eventId">eventId</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="eventTicket in eventTickets">
+                    <td><a ui-sref="eventTicketDetail({id:eventTicket.id})">{{eventTicket.id}}</a></td>
+                    <td>{{eventTicket.ticketCost}}</td>
+                    <td>{{eventTicket.totalTickets}}</td>
+                    <td>{{eventTicket.discount}}</td>
+                    <td>{{eventTicket.hasOffer}}</td>
+                    <td>{{eventTicket.minimunTicket}}</td>
+                    <td>{{eventTicket.ticketType}}</td>
+                    <td>{{eventTicket.ticketName}}</td>
+                    <td>{{eventTicket.startTime}}</td>
+                    <td>{{eventTicket.endTime}}</td>
+                    <td>{{eventTicket.duration}}</td>
+                    <td>{{eventTicket.eventId.id}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="eventTicketDetail({id:eventTicket.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(eventTicket.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(eventTicket.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

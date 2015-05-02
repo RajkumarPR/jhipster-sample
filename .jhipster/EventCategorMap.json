@@ -1,0 +1,35 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "categoryId",
+            "relationshipNameCapitalized": "CategoryId",
+            "relationshipFieldName": "categoryId",
+            "otherEntityName": "eventCategory",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "EventCategory",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "eventId",
+            "relationshipNameCapitalized": "EventId",
+            "relationshipFieldName": "eventId",
+            "otherEntityName": "event",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Event",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150430165629",
+    "pagination": "infinite-scroll",
+    "validation": false
+}

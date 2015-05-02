@@ -1,0 +1,19 @@
+{
+    "ubwebApp": {
+        "eventCategorMap" : {
+            "home": {
+                "title": "EventCategorMaps",
+                "createLabel": "Create a new EventCategorMap",
+                "createOrEditLabel": "Create or edit a EventCategorMap"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete EventCategorMap {{ id }}?"
+            },
+            "detail": {
+                "title": "EventCategorMap"
+            },
+            "categoryId": "categoryId",
+            "eventId": "eventId"
+        }
+    }
+}

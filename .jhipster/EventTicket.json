@@ -1,0 +1,125 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "eventId",
+            "relationshipNameCapitalized": "EventId",
+            "relationshipFieldName": "eventId",
+            "otherEntityName": "event",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Event",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "ticketCost",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "TicketCost",
+            "fieldNameUnderscored": "ticket_cost",
+            "fieldInJavaBeanMethod": "TicketCost",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "totalTickets",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "TotalTickets",
+            "fieldNameUnderscored": "total_tickets",
+            "fieldInJavaBeanMethod": "TotalTickets",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "discount",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Discount",
+            "fieldNameUnderscored": "discount",
+            "fieldInJavaBeanMethod": "Discount",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "hasOffer",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "HasOffer",
+            "fieldNameUnderscored": "has_offer",
+            "fieldInJavaBeanMethod": "HasOffer",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "minimunTicket",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "MinimunTicket",
+            "fieldNameUnderscored": "minimun_ticket",
+            "fieldInJavaBeanMethod": "MinimunTicket",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "ticketType",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "TicketType",
+            "fieldNameUnderscored": "ticket_type",
+            "fieldInJavaBeanMethod": "TicketType",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "ticketName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "TicketName",
+            "fieldNameUnderscored": "ticket_name",
+            "fieldInJavaBeanMethod": "TicketName",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "startTime",
+            "fieldType": "String",
+            "fieldNameCapitalized": "StartTime",
+            "fieldNameUnderscored": "start_time",
+            "fieldInJavaBeanMethod": "StartTime",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "endTime",
+            "fieldType": "String",
+            "fieldNameCapitalized": "EndTime",
+            "fieldNameUnderscored": "end_time",
+            "fieldInJavaBeanMethod": "EndTime",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "duration",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Duration",
+            "fieldNameUnderscored": "duration",
+            "fieldInJavaBeanMethod": "Duration",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150430184923",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

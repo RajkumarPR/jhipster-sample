@@ -1,0 +1,112 @@
+<div>
+
+    <h2 translate="ubwebApp.eventCategorMap.home.title">EventCategorMap</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveEventCategorMapModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="ubwebApp.eventCategorMap.home.createLabel">Create a new EventCategorMap</span>
+    </button>
+    <div class="modal fade" id="saveEventCategorMapModal" tabindex="-1" role="dialog" aria-labelledby="myEventCategorMapLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEventCategorMapLabel" translate="ubwebApp.eventCategorMap.home.createOrEditLabel">Create or edit a EventCategorMap</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="eventCategorMap.id" readonly>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventCategorMap.categoryId">categoryId</label>
+                            <select class="form-control" name="categoryId" ng-model="eventCategorMap.categoryId.id" ng-options="eventCategory.id as eventCategory.id for eventCategory in eventcategorys">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label translate="ubwebApp.eventCategorMap.eventId">eventId</label>
+                            <select class="form-control" name="eventId" ng-model="eventCategorMap.eventId.id" ng-options="event.id as event.id for event in events">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteEventCategorMapConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(eventCategorMap.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="ubwebApp.eventCategorMap.delete.question" translate-values="{id: '{{eventCategorMap.id}}'}">Are you sure you want to delete this EventCategorMap?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="ubwebApp.eventCategorMap.categoryId">categoryId</th>
+                    <th translate="ubwebApp.eventCategorMap.eventId">eventId</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="loadPage(page + 1)" infinite-scroll-disabled="links['last'] == page">
+                <tr ng-repeat="eventCategorMap in eventCategorMaps">
+                    <td><a ui-sref="eventCategorMapDetail({id:eventCategorMap.id})">{{eventCategorMap.id}}</a></td>
+                    <td>{{eventCategorMap.categoryId.id}}</td>
+                    <td>{{eventCategorMap.eventId.id}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="eventCategorMapDetail({id:eventCategorMap.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(eventCategorMap.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(eventCategorMap.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

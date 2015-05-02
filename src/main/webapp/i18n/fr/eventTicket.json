@@ -1,0 +1,29 @@
+{
+    "ubwebApp": {
+        "eventTicket" : {
+            "home": {
+                "title": "EventTickets",
+                "createLabel": "Créer un nouveau EventTicket",
+                "createOrEditLabel": "Créer ou éditer un EventTicket"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le EventTicket {{ id }} ?"
+            },
+            "detail": {
+                "title": "EventTicket"
+            },
+            "ticketCost": "TicketCost",
+            "totalTickets": "TotalTickets",
+            "discount": "Discount",
+            "hasOffer": "HasOffer",
+            "minimunTicket": "MinimunTicket",
+            "ticketType": "TicketType",
+            "ticketName": "TicketName",
+            "startTime": "StartTime",
+            "endTime": "EndTime",
+            "duration": "Duration",
+            "eventId": "eventId"
+        }
+    }
+}
+

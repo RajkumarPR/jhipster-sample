@@ -1,0 +1,110 @@
+
+<div>
+    <h2><span translate="ubwebApp.eventTicket.detail.title">EventTicket</span> {{eventTicket.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.ticketCost">TicketCost</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.ticketCost}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.totalTickets">TotalTickets</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.totalTickets}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.discount">Discount</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.discount}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.hasOffer">HasOffer</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.hasOffer}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.minimunTicket">MinimunTicket</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.minimunTicket}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.ticketType">TicketType</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.ticketType}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.ticketName">TicketName</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.ticketName}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.startTime">StartTime</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.startTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.endTime">EndTime</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.endTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.duration">Duration</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.duration}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="ubwebApp.eventTicket.eventId">eventId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{eventTicket.eventId.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="eventTicket"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
